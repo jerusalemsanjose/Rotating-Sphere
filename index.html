@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>3D Sphere Demonstration</title>
         <style>
             body {
@@ -14,11 +15,43 @@
                 line-height: 80%;
                 font-size: 10px;
             }
+
+            h1 {
+                font-size: 25px;
+                margin-left: 1%;
+                opacity: 0;
+                transform: translateY(-50px);
+                animation: slide 1s ease forwards;
+            }
+
+            @keyframes slide {
+            to {
+                opacity: 0.8;
+                transform: translateY(0);
+            }
+        }
+
+            @media (max-width: 768px) {
+            pre {
+                font-size: 6px;       
+                line-height: 70%;
+            }
+
+            h1 {
+                margin-left: 0;
+                text-align: center;  
+            }
+        }
         </style>
     </head>
 
     <body>
+
+    <h1>Hello World</h1>
+    <h1 style="font-size: 18px;">Wow! look it's <span id="randomWord"></span>!</h1>
+
         <pre id="sphere"></pre>
         <script src="sphere.js"></script>
+        <script src="misc.js"></script>
     </body>
 </html>
