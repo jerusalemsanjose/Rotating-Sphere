@@ -1,5 +1,5 @@
 # Rotating-Sphere
-It's a rotating sphere made with JavaScript
+It's a rotating sphere made with JavaScript. The site I published won't work lmfao
 
 Preview:
 
